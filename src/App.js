@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import SideBar from './SideBar';
-import MainContent from './MainContent';
+import SideBar from './components/SideBar';
+import MainContent from './components/MainContent';
 
 class App extends Component {
   render() {
