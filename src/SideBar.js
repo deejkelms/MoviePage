@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classnames from 'classnames'
-import logo from '../../public/logo.png'
+import logo from '../public/logo.png'
 
 export default class Shows extends Component {
   constructor() {
@@ -24,7 +24,7 @@ export default class Shows extends Component {
       <div className={classnames('shows', {
         active: this.state.active
       })}>
-        <img className="logo" src={logo} alt='kindur' />
+        <img src={logo} alt='kindur' />
         <ul className='items'>
           {
             this.state.shows && this.state.shows.map(show => {
@@ -40,3 +40,4 @@ export default class Shows extends Component {
     )
   }
 }
+
